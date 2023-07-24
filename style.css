@@ -74,17 +74,23 @@ html {
 
   }
 
+  a {
+    color: rgb(89, 0, 255);
+  }
+
   .bio{
     padding-left: 2%;
     padding-top: 20%;
     padding-right: 75%;
     font-family: 'Be Vietnam Pro';
-    font-size: 16px;
+    font-size: 18px;
     color: rgb(106, 99, 97);
   }
   .info{
+    padding-left: 2%;
+    padding-top: 0.2%;
     font-family: 'Be Vietnam Pro';
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(106, 99, 97);
   }
   /* navigation */
