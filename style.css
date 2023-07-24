@@ -53,6 +53,11 @@ html {
     overflow-y: scroll;
     
   }
+
+  /* .box1 [
+    width: 300px;
+    height: 300px;
+   ] */
   
   ::-webkit-scrollbar {
     display: none;
@@ -78,6 +83,7 @@ html {
  
   }
 
+ 
 
   .bio{
     padding-left: 2%;
@@ -87,6 +93,7 @@ html {
     font-size: 18px;
     color: rgb(106, 99, 97);
   }
+
   .info{
     padding-left: 2%;
     padding-top: 0.2%;
