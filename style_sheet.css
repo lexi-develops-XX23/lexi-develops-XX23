@@ -4,7 +4,7 @@
 /* @FONT FACE (enable the use of 'custom fonts' inside your document) */
 
 @font-face {
-    font-family: Bagel_Fat_One_Reg;
+    font-family: Fat_Bagel;
     src: url('../simonida_savic/fonts/Bagel_Fat_One/BagelFatOne-Regular.ttf');
     font-weight: normal;
     font-style: normal;
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family: Be_Vietnam_Pro_Reg;
+    font-family: Vietnam_Pro;
     src: url('../simonida_savic/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf');
     font-weight: normal;
     font-style: normal;
@@ -29,7 +29,7 @@
     --color-text-link: rgba(0,0,255,0.8);
     --color-text-link-hover: rgba(0,0,255,0.4); */
     /* Font settings */
-    --font-family: 'Be_Vietnam_Pro_Reg', 'Bagel_Fat_One_Reg', sans-serif;
+    --font-family: 'Vietnam_Pro', 'Fat_Bagel', sans-serif;
     --font-size: 20px;
     /* Margins settings */
     --margin: 1rem;
@@ -128,7 +128,7 @@ summary{
 
 /* responsive typeface */
 
-/* @media (max-width: 298px) { 
+@media (max-width: 298px) { 
     :root{ --font-size: 15px; } html, body {font: var(--font-size) var(--font-family);} 
   }
   @media (min-width: 299px) and (max-width: 339px) { 
@@ -160,7 +160,7 @@ summary{
   }
   @media (min-width: 1880px) { 
     :root{ --font-size: 30px; } html, body {font: var(--font-size) var(--font-family);}
-  } */
+  }
 
 
 
