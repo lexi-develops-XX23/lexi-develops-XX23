@@ -44,15 +44,13 @@ html, body {
   overflow: hidden;
 }
 
-html::-webkit-scrollbar {
-    display: none;
+html {
     font: var(--font-size) var(--font-family);
     color: var(--color-text);
     background-color: var(--color-background);
   }
   
-  body:-webkit-scrollbar {
-    display: none;
+  body {
     position:relative;
     background-color: rgb(245, 245, 245);
     font: var(--font-size) var(--font-family);
@@ -60,6 +58,10 @@ html::-webkit-scrollbar {
     width:100%;
     height:auto;
     overflow-y: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   #box_1 {
@@ -148,7 +150,7 @@ summary{
   
   /* if you want to hide something visually but want to keep it readable / accessible for screen readers (sr) */
   
-  /* .sr-only {
+  .sr-only {
     border: 0 !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
     -webkit-clip-path: inset(50%) !important;
@@ -161,7 +163,7 @@ summary{
     width: 1px !important;
     white-space: nowrap !important;
   }
-   */
+  
 
    /* MEDIA QUERIES */
 
@@ -219,11 +221,9 @@ summary{
   
     /* utilities */
   
-    /* .desktop{display:none!important;}
+    .desktop{display:none!important;}
     .mobile{display:block;}
   
-  }
-   */
   
 /*   
   @media (max-width: 339px) { */
