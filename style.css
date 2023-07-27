@@ -73,9 +73,18 @@ html {
     display: none;
   }
 
+  .banner{
+    width: 100vw;
+    height: 1vh;
+    background-image: url(../simonida_savic/images/mushies.png);
+    background-size: cover;
+    filter: (100%);
+    -webkit-filter: rgb(106, 99, 97);
+  }
+
   #box_1 {
-    width: 400px;
-    height: 400px;
+    width: 360px;
+    height: 360px;
     border-radius: 2px;
     border: solid rgb(106, 99, 97);
     box-shadow: 0 0 15px rgb(255, 17, 53);
