@@ -150,7 +150,7 @@ summary{
   
   /* if you want to hide something visually but want to keep it readable / accessible for screen readers (sr) */
   
-  .sr-only {
+  /* .sr-only {
     border: 0 !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
     -webkit-clip-path: inset(50%) !important;
@@ -162,7 +162,7 @@ summary{
     position: absolute !important;
     width: 1px !important;
     white-space: nowrap !important;
-  }
+  } */
   
 
    /* MEDIA QUERIES */
