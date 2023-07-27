@@ -112,8 +112,16 @@ html {
 
   }
 
-  a {
- 
+  a:visited {
+    color: rgb(255, 65, 17);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
   }
 
  
