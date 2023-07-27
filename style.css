@@ -80,6 +80,10 @@ html {
     position: relative;
   }
   
+  video{
+    background-size: cover;
+    background-position: center center;
+  }
 
   h1{
 
