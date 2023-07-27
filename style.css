@@ -4,7 +4,7 @@
 /* @FONT FACE (enable the use of 'custom fonts' inside your document) */
 
 @font-face {
-    font-family: 'Fat_Bagel', sans-serif;
+    font-family: 'Bagel_Fat_One', sans-serif;
     src: url('../simonida_savic/fonts/Bagel_Fat_One/BagelFatOne-Regular.ttf');
     font-weight: normal;
     font-style: normal;
@@ -37,7 +37,7 @@
     --color-text-link: rgba(0,0,255,0.8);
     --color-text-link-hover: rgba(0,0,255,0.4); */
     /* Font settings */
-    --font-family: 'Be Vietnam Pro', 'Fat_Bagel', sans-serif;
+    --font-family: 'Be Vietnam Pro', 'Bagel_Fat_One', 'Amarai' sans-serif;
     --font-size: 20px;
     /* Margins settings */
     --margin: 1rem;
@@ -137,7 +137,7 @@ html {
     padding-left: 2%;
     padding-top: 2%;
     padding-right: 75%;
-    font-family: 'Fat_Bagel';
+    font-family: 'Be Vietnam Pro';
     font-size: 16px;
     color: rgb(106, 99, 97);
     line-height: 1.5;
@@ -146,7 +146,7 @@ html {
   .info{
     padding-left: 2%;
     padding-top: 0;
-    font-family: 'Fat_Bagel';
+    font-family: 'Bagel_Fat_One';
     font-size: 14px;
     color: rgb(106, 99, 97);
   }
