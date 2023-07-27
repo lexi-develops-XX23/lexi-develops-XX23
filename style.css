@@ -114,8 +114,8 @@ html {
   /* filter: (100%);
   -webkit-filter: rgb(106, 99, 97); */
   z-index: -10;
-  background-image: linear-gradient(to top);
-}
+  background: (linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+  }
 
   h1{
 
