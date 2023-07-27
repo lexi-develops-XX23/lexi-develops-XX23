@@ -54,11 +54,17 @@ html {
     
   }
 
-  /* .box1 [
+  #box_1 {
     width: 300px;
     height: 300px;
-   ] */
-  
+    border-radius: 1px;
+    border-color:rgb(106, 99, 97);
+    background-color: aliceblue;
+  }
+
+
+   
+
   ::-webkit-scrollbar {
     display: none;
   }
@@ -85,7 +91,7 @@ html {
 
  
 
-  #bio{
+  .bio{
     padding-left: 2%;
     padding-top: 20%;
     padding-right: 75%;
