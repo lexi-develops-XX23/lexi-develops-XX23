@@ -59,9 +59,12 @@ html {
     height: 300px;
     border-radius: 2px;
     border: solid rgb(106, 99, 97);
-    border-width: 2px 2px 2px;
-    background-color: white;
-    box-shadow: 10px 10px 10px rgb(106, 99, 97);;
+    box-shadow: 0 0 30px rgb(31, 83, 255);
+    border: 2px solid rgb(31, 83, 255);
+    border-radius: 3px;
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
 
