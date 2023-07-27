@@ -40,6 +40,8 @@
 html, body {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
+  scrollbar-width: none;  /* Firefox */
+  overflow: hidden;
 }
 
 html::-webkit-scrollbar {
