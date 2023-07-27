@@ -91,7 +91,7 @@ html {
   
   .video-container{
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     overflow: hidden;
     position: relative;
   }
@@ -106,8 +106,9 @@ html {
 }
 
 .banner{
+  margin-left: 0;
   width: 99.1%;
-  height: 30vh;
+  height: 25vh;
   position: center center;
   background-image: url(../simonida_savic/images/mushies.png) no-repeat;
   background-size: cover;
@@ -117,6 +118,7 @@ html {
   z-index: -10; */
   /* filter: invert(100%); */
   /* filter: grayscale(100%); */
+  z-index: 1;
 }
 
   h1{
