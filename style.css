@@ -77,7 +77,7 @@ html {
     width: 100vw;
     height: 10vh;
     background-image: url(../simonida_savic/images/mushies.png);
-    background-size: cover;
+    background-size: cover, no-repeat;
     /* filter: (100%);
     -webkit-filter: rgb(106, 99, 97); */
     z-index: 10;
