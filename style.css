@@ -37,7 +37,8 @@
     --color-text-link: rgba(0,0,255,0.8);
     --color-text-link-hover: rgba(0,0,255,0.4); */
     /* Font settings */
-    --font-family: 'Be Vietnam Pro', 'Bagel_Fat_One', 'Amarai' sans-serif;
+    --font-family: 'Be Vietnam Pro','Amarai' sans-serif;
+    --font-family: 'Bagel_Fat_One', cursive;
     --font-size: 20px;
     /* Margins settings */
     --margin: 1rem;
