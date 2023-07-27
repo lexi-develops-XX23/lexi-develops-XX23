@@ -19,6 +19,14 @@
     font-display: block;
 }
 
+@font-face {
+  font-family: 'Almarai', sans-serif;
+  src: url('../simonida_savic/fonts/Almarai/Almarai-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 
 /* VARIABLES */
 
@@ -70,7 +78,7 @@ html {
     border-radius: 2px;
     border: solid rgb(106, 99, 97);
     box-shadow: 0 0 15px rgb(255, 17, 53);
-    border: 2px solid rgb(31, 83, 255);
+    border: 2px solid rgb(106, 99, 97);
     border-radius: 3px;
     display: inline-block;
     overflow-x: hidden;
@@ -94,31 +102,6 @@ html {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.background_box1 {
-  height: 50%;
-  width: 50%;
-  background: bisque;
-  aspect-ratio: 16/9;
-  border-radius: 15px;
-}
-
-.background_box1::before {
-  content: "";
-  position: absolute;
-  height: 50%;
-  width: 50%;
-  background: linear-gradient(90deg, rgb(255, 17, 53), blue, rgb(255, 17, 53));
-  z-index: -1;
-  filter: blur(20px);
 }
 
   h1{
@@ -155,14 +138,15 @@ html {
     padding-top: 2%;
     padding-right: 75%;
     font-family: 'Be Vietnam Pro';
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(106, 99, 97);
+    line-height: 1.5;
   }
 
   .info{
     padding-left: 2%;
-    padding-top: 0.2%;
-    font-family: 'Be Vietnam Pro';
+    padding-top: 0;
+    font-family: 'Fat_Bagel';
     font-size: 14px;
     color: rgb(106, 99, 97);
   }
