@@ -75,9 +75,10 @@ html {
 
   container { overflow:auto; /*or scroll*/ }
 
-  ::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     display: none;
   }
+  
 
   h1{
 
