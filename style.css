@@ -80,7 +80,7 @@ html {
     background-size: cover;
     filter: (100%);
     -webkit-filter: rgb(106, 99, 97);
-    z-index: 1;
+    z-index: 10;
   }
 
   #box_1 {
