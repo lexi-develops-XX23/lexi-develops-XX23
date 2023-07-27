@@ -51,7 +51,6 @@ html {
     width:100%;
     height:auto;
     overflow-y: scroll;
-    
   }
 
   #box_1 {
@@ -65,11 +64,12 @@ html {
     display: inline-block;
     overflow-x: hidden;
     overflow-y: auto;
-    left: 30vw;
+    left: 1.5vw;
+    top: 3vh;
+    position: relative;
   }
 
-
-   
+  container { overflow:auto; /*or scroll*/ }
 
   ::-webkit-scrollbar {
     display: none;
