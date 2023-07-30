@@ -1,49 +1,89 @@
 <!doctype html>
 <html>
+
 <head>
     <title>simonida.savic</title>
-<meta charset="utf-8">
-<script type="text/javascript" src="GitHub/simonida_savic/script.js?ver=1.0" defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="GitHub/simonida_savic/style.css?ver=1.0"/>
-<title>index.html</title>
-<style type="text/css">
-@import url("style.css");
-</style>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Bagel+Fat+One&family=Be+Vietnam+Pro&family=Inter:wght@700;800;900&display=swap');
-    </style> 
-    
+    <meta charset="utf-8">
+    <script type="text/javascript" src="GitHub/simonida_savic/script.js?ver=1.0" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="GitHub/simonida_savic/style.css?ver=1.0" />
+    <title>index.html</title>
+    <style type="text/css">
+        @import url("style.css");
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Bagel+Fat+One&family=Be+Vietnam+Pro&family=Inter:wght@700;800;900&display=swap');
+    </style>
+
 </head>
 
 <body>
     <main>
-        <div class="banner" style="background-image: url('/images/mushies.png')" >
-        </div>
-        <div id="box_1">
-            <div class="video-container">
-            <video   preload="auto" autoplay loop muted="muted" volume="0"> 
-                <source src="" type="video/mp4"> 
-                </video>
+        <div class="banner" style="background-image: url('/images/mushies.png')"></div>
+        <div class="content">
+            <div class="sidebar">
+                <div id="video-container">
+                    <video preload="auto" autoplay loop muted="muted" volume="0">
+                        <source src="" type="video/mp4">
+                    </video>
+
+                </div>
+                <div id="demo">
+                    <div class="content">
+                        <div class="bio">
+                            <p>
+                                Simonida Savić (b. Netherlands) works as a multidisciplinary graphic designer, where she
+                                translates her research into visual storytelling.<br> By having a variety of interests,
+                                including the development of psychedelics and mushrooms, as well as other
+                                cultural curiosities, she uses her personal interest as an inspiration for her
+                                individual projects.<br><br>
+                                After growing up near the seaside, she has been living and working in The Hague.
+                                During her studies at the KABK (2019-2023), she noticed that she finds great
+                                interest and curiosity by collaborating with peers and commissioners that are not
+                                necessarily engaged in the graphic design practice itself.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <p> <a href="https://www.instagram.com/simonida.sa/" style="text-decoration:none;color:blue">
+                            simonida
+                            savic </a>
+                        | +31 </p>
+                    <p><a class="button" href="mailto:email@email.nl" style="color:rgb(255, 17, 53)">
+                            simonida_inquiries@outlook.com</a></p>
+                </div>
+            </div>
+            <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 360 }'>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/800/450" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/800/200" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/800/800" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/800/430" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/800/900" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/800/1000" alt="">
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/800/2000" alt="">
+                </div>
+
             </div>
         </div>
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" style= "font-family: Bagel Fat One"> &searr;</button>
-        <div id="demo" class="collapse">
-        <div class="content">
-        <div class="bio">
-        <p>
-            Simonida Savić (b. Netherlands) works as a multidisciplinary graphic designer, where she <br> translates her research into visual storytelling. <br> By having a variety of interests, including the development of psychedelics and mushrooms, <br> as well as other cultural curiosities, she uses <br> her personal interest as an inspiration for her <br> individual projects. <br> 
-            <br> After growing up near the seaside, she has <br>  been living and working in The Hague. During <br> her studies at the KABK (2019-2023), she <br> noticed that she finds great interest and curiosity <br> by collaborating with peers and commissioners <br> that are not necessarily engaged in the graphic <br> design practice itself. 
-</div>
-</div>
-        
-    <div class="info">
-       <p> <a href="https://www.instagram.com/simonida.sa/" style="text-decoration:none;color:blue"> simonida savic </a>
-        | +31 </p>
-       <p><a class="button" href="mailto:email@email.nl" style="color:rgb(255, 17, 53)"> simonida_inquiries@outlook.com</a></p>
-    </div>
-        
+
+
     </main>
 </body>
+
 </html>
