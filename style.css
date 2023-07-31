@@ -188,7 +188,7 @@ a:hover {
 
 .grid-item,
 .grid-sizer {
-  width: calc(33% - 10px);
+  width: calc(33% - 20px);
 }
 
 /* .gutter-sizer {
