@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'Almarai', sans-serif;
-  src: url('../simonida_savic/fonts/Almarai/Almarai-Light.ttf');
+  src: url('./fonts/Almarai/Almarai-Light.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -29,6 +29,9 @@
 
 
 /* VARIABLES */
+* {
+  box-sizing: border-box;
+}
 
 :root {
   /* Color settings */
@@ -41,7 +44,7 @@
   --font-family: 'Bagel Fat One', cursive;
   --font-size: 20px;
   /* Margins settings */
-  --margin: 1rem;
+  /* --margin: 1rem; */
 }
 
 /* GENERAL STYLES */
@@ -117,20 +120,13 @@ body {
   filter: invert(40%) sepia(5%) saturate(475%) hue-rotate(327deg) brightness(94%) contrast(90%);
   -webkit-filter: rgb(106, 99, 97);
   z-index: -10;
-  */
+
   /* filter: invert(100%); */
   /* filter: grayscale(100%); */
   z-index: 1;
 }
 
-h1 {}
 
-h2 {}
-
-h3,
-h4,
-h5,
-h6 {}
 
 p {
   margin: 0;
@@ -179,44 +175,40 @@ a:hover {
   color: rgb(106, 99, 97);
 }
 
-.works {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 
+.grid {
   width: 100%;
-  height: auto;
-  background-color: red;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item,
+.grid-sizer {
+  width: 33%;
+}
+
+.gutter-sizer {
+  width: 4%;
 }
 
 .grid-item {
-  width: 200px;
+  background-color: red;
+  float: left;
+  /* margin-bottom: 10px; */
 }
 
-.grid-item>img {
-  height: 100%;
-  width: 100%;
+.grid-item img {
+  display: block;
+  max-width: 100%;
 }
 
-/* .work-item {
-  flex: 0 1 360px;
-  background-color: white;
-}
-
-.work-item>img {
-  width: 100%;
-} */
 
 /* navigation */
 
-nav {}
-
-
-/* content */
-
-main {}
-
-summary {}
 
 
 /* GENERAL USABILITY */
