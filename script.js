@@ -1,17 +1,22 @@
-// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+var theme = ''
 
-// init Masonry
-var grid = document.querySelector('.grid');
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+} else {
+    theme = 'light'
+}
+let toggleMode = () => {
+    if (theme === 'light') {
+        theme = 'dark'
+        document.body.style.backgroundColor = '#000'
+        document.querySelectorAll("#bio")[0].style.color = '#dcb'
 
-var msnry = new Masonry(grid, {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-item',
-    gutter: '.gutter-sizer',
-    percentPosition: false
-});
+    } else {
+        theme = 'light'
+        document.body.style.backgroundColor = '#fff'
+        document.querySelectorAll("#bio")[0].style.color = 'rgb(106, 99, 97)'
+        console.log(document.querySelectorAll(".bio"));
 
-imagesLoaded(grid).on('progress', function () {
-    // layout Masonry after each image loads
-    msnry.layout();
-});
 
+    }
+}

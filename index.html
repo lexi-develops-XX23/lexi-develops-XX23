@@ -14,7 +14,7 @@
     </style>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
-    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
     <script>
         $(function () {
             var $grid = $('.grid').masonry({
@@ -36,6 +36,7 @@
         <div class="banner" style="background-image: url('/images/mushies.png')"></div>
         <div class="content">
             <div class="sidebar">
+                <button onclick="toggleMode()"><img src="./images/modetoggle/dark-mode.svg" alt=""> Dark mode</button>
                 <div id="video-container">
                     <video preload="auto" autoplay loop muted="muted" volume="0">
                         <source src="" type="video/mp4">
@@ -44,7 +45,7 @@
                 </div>
                 <div id="demo">
                     <div class="content">
-                        <div class="bio">
+                        <div id="bio">
                             <p>
                                 Simonida Savić (b. Netherlands) works as a multidisciplinary graphic designer, where she
                                 translates her research into visual storytelling.<br> By having a variety of interests,

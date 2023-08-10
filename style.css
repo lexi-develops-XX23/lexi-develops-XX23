@@ -67,7 +67,6 @@ html {
 body {
   margin: 0;
   position: relative;
-  background-color: rgb(245, 245, 245);
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
   width: 100%;
@@ -160,11 +159,10 @@ a:hover {
 
 }
 
-.bio {
+#bio {
   padding-top: 18px;
   font-family: 'Be Vietnam Pro';
   font-size: 16px;
-  color: rgb(106, 99, 97);
   line-height: 1.5;
 }
 
@@ -413,3 +411,38 @@ a:hover {
 /* use this query to apply style for 'small' desktop screens */
 
 /* } */
+
+
+/* Mode toggler stuff */
+.sidebar button {
+  fill: #dcb;
+  color: #000;
+  background-color: #dcb;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+
+    background-color: rgb(245, 245, 245);
+    color: #dcb;
+  }
+
+  #bio {
+
+    color: rgb(106, 99, 97);
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #dcb;
+  }
+
+  #bio {
+    color: #fff
+  }
+
+
+}
