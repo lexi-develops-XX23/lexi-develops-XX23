@@ -415,9 +415,10 @@ a:hover {
 
 /* Mode toggler stuff */
 .sidebar button {
-  fill: #dcb;
+  fill: blue;
   color: #000;
-  background-color: #dcb;
+  background-color: blue;
+  border-radius: 1rem;
 }
 
 @media (prefers-color-scheme: light) {
