@@ -189,7 +189,7 @@ a:hover {
   margin: 10px;
 
   /* DELETE THIS WHEN DONE */
-  display: none;
+  /* display: none; */
 }
 
 .grid:after {
@@ -219,7 +219,8 @@ a:hover {
 }
 
 .project {
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: row-reverse;
   max-width: 100%;
 }
