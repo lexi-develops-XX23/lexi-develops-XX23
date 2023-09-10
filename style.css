@@ -40,8 +40,8 @@
     --color-text-link: rgba(0,0,255,0.8);
     --color-text-link-hover: rgba(0,0,255,0.4); */
   /* Font settings */
-  --font-family: 'Be Vieotnam Pro', 'Amarai' sans-serif;
-  --font-family: 'Bagel Fat One', cursive;
+  --font-paragraph: 'Be Vietnam Pro', sans-serif;
+  --font-headings: 'Bagel Fat One', cursive;
   --font-size: 20px;
   /* Margins settings */
   /* --margin: 1rem; */
@@ -58,8 +58,17 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-headings);
+}
+
+p {
+  font-family: var(--font-paragraph);
+}
+
 html {
-  font: var(--font-size) var(--font-family);
   color: var(--color-text);
   background-color: var(--color-background);
 }
@@ -67,7 +76,6 @@ html {
 body {
   margin: 0;
   position: relative;
-  font: var(--font-size) var(--font-family);
   color: var(--color-text);
   width: 100%;
   height: auto;
@@ -87,6 +95,7 @@ body {
 .sidebar {
   width: 360px;
   padding: 40px;
+
 }
 
 #video-container {
@@ -100,7 +109,7 @@ body {
   display: inline-block;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color:  rgb(251, 251, 251);
+  background-color: rgb(251, 251, 251);
 }
 
 #video-container>video {
@@ -160,6 +169,7 @@ a:hover {
 }
 
 #bio {
+
   padding-top: 18px;
   font-family: 'Be Vietnam Pro';
   font-size: 16px;
@@ -176,6 +186,10 @@ a:hover {
 
 .grid {
   width: 100%;
+  margin: 10px;
+
+  /* DELETE THIS WHEN DONE */
+  display: none;
 }
 
 .grid:after {
@@ -201,6 +215,28 @@ a:hover {
 
 .grid-item img {
   display: block;
+  max-width: 100%;
+}
+
+.project {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 100%;
+}
+
+.project-info {
+  flex: 0 0 40%;
+  padding: 10px;
+  /* background-color: blue; */
+
+}
+
+.project-images {
+  flex: 0 0 60%;
+  /* background-color: red; */
+}
+
+.project-images>img {
   max-width: 100%;
 }
 
@@ -248,9 +284,7 @@ a:hover {
   }
 
   html,
-  body {
-    font: var(--font-size) var(--font-family);
-  }
+  body {}
 }
 
 @media (min-width: 299px) and (max-width: 339px) {
@@ -259,9 +293,7 @@ a:hover {
   }
 
   html,
-  body {
-    font: var(--font-size) var(--font-family);
-  }
+  body {}
 }
 
 @media (min-width: 340px) and (max-width: 439px) {
@@ -271,7 +303,7 @@ a:hover {
 
   html,
   body {
-    font: var(--font-size) var(--font-family);
+    /* font: var(--font-size) var(--font-family); */
   }
 }
 
@@ -282,7 +314,7 @@ a:hover {
 
   html,
   body {
-    font: var(--font-size) var(--font-family);
+    /* font: var(--font-size) var(--font-family); */
   }
 }
 
@@ -293,7 +325,7 @@ a:hover {
 
   html,
   body {
-    font: var(--font-size) var(--font-family);
+    /* font: var(--font-size) var(--font-family); */
   }
 }
 
@@ -304,7 +336,7 @@ a:hover {
 
   html,
   body {
-    font: var(--font-size) var(--font-family);
+    /* font: var(--font-size) var(--font-family); */
   }
 }
 
@@ -315,7 +347,7 @@ a:hover {
 
   html,
   body {
-    font: var(--font-size) var(--font-family);
+    /* font: var(--font-size) var(--font-family); */
   }
 }
 
@@ -337,7 +369,7 @@ a:hover {
 
   html,
   body {
-    font: var(--font-size) var(--font-family);
+    /* font: var(--font-size) var(--font-family); */
   }
 }
 
@@ -348,7 +380,7 @@ a:hover {
 
   html,
   body {
-    font: var(--font-size) var(--font-family);
+    /* font: var(--font-size) var(--font-family); */
   }
 }
 
@@ -359,7 +391,7 @@ a:hover {
 
   html,
   body {
-    font: var(--font-size) var(--font-family);
+    /* font: var(--font-size) var(--font-family); */
   }
 }
 
@@ -416,18 +448,18 @@ a:hover {
 /* Mode toggler stuff */
 .sidebar button {
   box-shadow: 0 0 15px rgb(255, 0, 217);
-  background-color:rgb(251, 251, 251);
+  background-color: rgb(251, 251, 251);
   border-radius: 50%;
   z-index: 11;
   width: 30px;
-  height: 30px;x
+  height: 30px;
 }
 
 @media (prefers-color-scheme: light) {
   body {
 
     background-color: rgb(245, 245, 245);
-    color: rgb(251, 251, 251);
+    color: rgb(106, 99, 97);
   }
 
   #bio {

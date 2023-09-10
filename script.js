@@ -20,3 +20,23 @@ let toggleMode = () => {
 
     }
 }
+
+
+let imageBehavior = e => {
+    document.querySelector(".grid").style.display = 'none'
+    console.log(e);
+
+}
+
+window.onload = () => {
+
+    var gridCollection = document.getElementsByClassName("grid-item");
+    var gridItems = [...gridCollection]
+
+    gridItems.forEach(function (element, i) {
+        element.addEventListener("click", function () {
+            imageBehavior(i);
+        }
+        );
+    });
+}
