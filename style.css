@@ -223,6 +223,7 @@ a:hover {
 @media (hover: hover) {
   .grid:hover .grid-item {
     filter: blur(4px);
+    transition: 500ms ease-in-out;
   }
 
   .grid .grid-item:hover {
