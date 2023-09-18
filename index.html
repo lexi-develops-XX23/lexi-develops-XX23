@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
     <script>
         $(function () {
-            var $grid = $('.grid').masonry({
+            var $grid = $('#grid').masonry({
                 itemSelector: '.grid-item',
                 percentPosition: true,
             });
@@ -33,10 +33,22 @@
 
 <body>
     <main>
+        <button class="mode-button" onclick="toggleMode()"><svg id="sun" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                    d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z">
+                </path>
+            </svg>
+            <svg id="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M11.3807 2.01904C9.91573 3.38786 9 5.33708 9 7.50018C9 11.6423 12.3579 15.0002 16.5 15.0002C18.6631 15.0002 20.6123 14.0844 21.9811 12.6195C21.6613 17.8539 17.3149 22.0002 12 22.0002C6.47715 22.0002 2 17.523 2 12.0002C2 6.68532 6.14629 2.33888 11.3807 2.01904Z">
+                </path>
+            </svg></button>
+
         <div class="banner" style="background-image: url('/images/mushies.png')">
-            <button class="mode-button" onclick="toggleMode()"><img src="./images/" alt=""> </button>
+
         </div>
-        <div class="content">
+        <div id="container">
             <div class="sidebar">
                 <!-- <div id="video-container">
                     <video preload="auto" autoplay loop muted="muted" volume="0">
@@ -70,62 +82,83 @@
                             simonida_inquiries@outlook.com</a></p>
                 </div>
             </div>
-            <div class="grid">
+            <div id="grid">
 
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
 
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/CYANO-2022.jpg" />
+                    <a href="#placeholder">
+                        <img src="images/cover_images_grid_gallary/web_legacy_images_2/CYANO-2022.jpg" />
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/graduation_show_2023[04].jpg" />
+                    <a href="#placeholder">
+                        <img
+                            src="images/cover_images_grid_gallary/web_legacy_images_2/graduation_show_2023[04].jpg" /></a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/soup_hangers_mechX2023.jpg" />
+                    <a href="#placeholder">
+                        <img
+                            src="images/cover_images_grid_gallary/web_legacy_images_2/soup_hangers_mechX2023.jpg" /></a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/visual_essay_cover.jpg" />
+                    <a href="#placeholder">
+                        <img src="images/cover_images_grid_gallary/web_legacy_images_2/visual_essay_cover.jpg" /></a>
                 </div>
                 <div class="grid-item">
-                    <img
-                        src="images/cover_images_grid_gallary/web_legacy_images_2/She_Fights_Produces_scan_publi+stickers.jpg" />
+                    <a href="#placeholder">
+                        <img
+                            src="images/cover_images_grid_gallary/web_legacy_images_2/She_Fights_Produces_scan_publi+stickers.jpg" /></a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/exhibit_2022.jpg" />
+                    <a href="#placeholder">
+                        <img src="images/cover_images_grid_gallary/web_legacy_images_2/exhibit_2022.jpg" /></a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/probabillaties_2022.jpg" />
+                    <a href="#placeholder">
+                        <img src="images/cover_images_grid_gallary/web_legacy_images_2/probabillaties_2022.jpg" /></a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/IrmaBoom_5sept_25Nov_2022.jpg" />
+                    <a href="#placeholder">
+                        <img
+                            src="images/cover_images_grid_gallary/web_legacy_images_2/IrmaBoom_5sept_25Nov_2022.jpg" /></a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/good_of_nothing_publication.jpg" />
-                </div>
-
-                <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/collab_2021_stuart_hall.jpg" />
-                </div>
-
-                <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/mini_publication_side.jpg" />
-                </div>
-
-                <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/all_limeted-ed_bags.jpg" />
-                </div>
-
-                <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/summerschool_21.jpg" />
+                    <a href="#placeholder">
+                        <img
+                            src="images/cover_images_grid_gallary/web_legacy_images_2/good_of_nothing_publication.jpg" /></a>
                 </div>
 
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/sketchbook_2021.jpg" />
+                    <a href="#placeholder">
+                        <img
+                            src="images/cover_images_grid_gallary/web_legacy_images_2/collab_2021_stuart_hall.jpg" /></a>
                 </div>
 
                 <div class="grid-item">
-                    <img src="images/cover_images_grid_gallary/web_legacy_images_2/dreamproject_2020.jpg" />
+                    <a href="#placeholder">
+                        <img src="images/cover_images_grid_gallary/web_legacy_images_2/mini_publication_side.jpg" /></a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="#placeholder">
+                        <img src="images/cover_images_grid_gallary/web_legacy_images_2/all_limeted-ed_bags.jpg" /></a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="#placeholder">
+                        <img src="images/cover_images_grid_gallary/web_legacy_images_2/summerschool_21.jpg" /></a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="#placeholder">
+                        <img src="images/cover_images_grid_gallary/web_legacy_images_2/sketchbook_2021.jpg" /></a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="#placeholder">
+                        <img src="images/cover_images_grid_gallary/web_legacy_images_2/dreamproject_2020.jpg" /></a>
                 </div>
             </div>
             <!-- <div class="grid-item">
@@ -161,8 +194,16 @@
             <div class="grid-item">
                 <video src="">
             </div> -->
-
+            <div id="placeholder"></div>
             <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
                 <div class="project-info">
                     <h2>visual research project & printing methods</h2>
                     <p>A research project of which the interest/fascination for fungi, mycelium and mushrooms
@@ -185,6 +226,14 @@
                 </div>
             </div>
             <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
                 <div class="project-info">
                     <h2>Magic Pills, Shroom Bubbles & Grey Clouds | Good Soup exhibition at Grad Show KABK</h2>
                     <p>Guided & special thansk to: Ina Hollmann, Margarita Osipian, Thomas Buxo, François
@@ -210,6 +259,14 @@
                 </div>
             </div>
             <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
                 <div class="project-info">
                     <h2>Acrylic hangers Good Soup X Soupermarket | fundraiser supervisor</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repudiandae labore accusantium
@@ -228,6 +285,14 @@
                 </div>
             </div>
             <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
                 <div class="project-info">
                     <h2>a cultural phenomenon | visual essay & thesis preparation</h2>
                     <p>Guided by Ruben Pater</p>
@@ -253,6 +318,14 @@
                 </div>
             </div>
             <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
                 <div class="project-info">
                     <h2>‘She Fights and She Produces’ | ATRIA archive, sticker redesign</h2>
                     <p>Guided by Mattias Kreuzer</p>
@@ -268,6 +341,14 @@
             </div>
 
             <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
                 <div class="project-info">
                     <h2>Exhibition | fungi project</h2>
                     <p>By trying to find a balance of theoretical research and visual translation - the fungi
@@ -290,165 +371,244 @@
                 </div>
             </div>
 
-        </div>
-        <div class="project">
-            <div class="project-info">
-                <h2>Log error Target</h2>
-                <p>Log error target is a web browser game of which is based on the probabilities that are generated
-                    through the AI calculator from the Google Maps app. Through tracking and collecting our data
-                    from actual routes we take for navigation, even when these apps are not actively open and used,
-                    the AI simulator of the Semantic Location History of Google generates and makes calculations on
-                    all possible outcomes for each “device tag” (smartphone or other smart devices that have GPS
-                    tracking chips in their hardware). Focusing on these ‘probabilities’ and assumptions that are
-                    made for you (by these tracking apps,) Log error Target is a representation of this generated
-                    system where ‘us’ the users are (thinking) we’re in full control of our destinations, but whilst
-                    moving places with our smart devices in our pockets, decisions have been made for us by the use
-                    of percentages and variables.</p>
-            </div>
-            <div class="project-images">
-                <img src="./images/per_project/project6/web_legacy/green_3.jpg" alt="">
-                <img src="./images/per_project/project6/web_legacy/blue.jpg" alt="">
-                <img src="./images/per_project/project6/web_legacy/cyan.jpg" alt="">
-                <img src="./images/per_project/project6/web_legacy/orange.jpg" alt="">
-                <img src="./images/per_project/project6/web_legacy/orange_2.jpg" alt="">
-                <img src="./images/per_project/project6/web_legacy/yellow.jpg" alt="">
-                <img src="./images/per_project/project6/web_legacy/green_3.jpg" alt="">
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-info">
-                <h2>IBO</h2>
-                <p>3 month internship at Irma Boom Office | 5 Sept. - 25th Nov. 2022</p>
-            </div>
-            <div class="project-images">
-                <img src="./images/per_project/Internship_IBO/3months_IBO.gif" alt="">
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-info">
-                <h2>The Good of Doing Nothing | Documentation</h2>
-                <p>During an exploration of the act of doing nothing - the collective 'Design Inquiry Group' gave
-                    the opportunity to question and understand what ‘doing nothing’ means in today’s society and how
-                    we all interpreted ‘doing nothing’ differently - also aside from our profession and our studies.
-                    Each week we would discuss subtopics around the act of ‘Doing Nothing’: ecology, breathing, the
-                    erotic, labour. With every topic and meetings every week, we would bring something to class and
-                    discuss this with tutors and peers - collaborate on small video projects and ensure to document
-                    the experiences translated into a publication and a short video: The Good of Doing Nothing.
-                    Cover: saddle stich bound, hand sown title. Pages: duo & multicolor risograph, laser printed A3
-                    Biotop 90-130gr, craft paper 80gr.</p>
-            </div>
-            <div class="project-images">
-                <img src="./images/per_project/project9/web_legacy/cover.jpg" alt="">
-                <img src="./images/per_project/project9/web_legacy/spread_2.jpg" alt="">
-                <img src="./images/per_project/project9/web_legacy/spread_3.jpg" alt="">
-                <img src="./images/per_project/project9/web_legacy/spread_4.jpg" alt="">
-                <img src="./images/per_project/project9/web_legacy/spread_5.jpg" alt="">
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-info">
-                <h2>collective redesign | publication</h2>
-                <p>Together with Alessandro Lucarini and Ronaldo Figueiredo, this redesign of the publication of
-                    Stuart Halls’ Representation was a short but interesting and sweet process. By trying first
-                    analysing the text ourselves, we tried to find a balance of clear communication of the text: we
-                    edited the use of images, defined more clearly the use of vocabulary, occasionally additional
-                    footnotes, and (re)structured the epistemology of the writer Stuart Hall to make this more
-                    accessible for a diverse public of readers. Guided by Els Kuijpers. cover: laserprinted,
-                    processing slicing tool. pages: biotop 90-120gr.</p>
-            </div>
-            <div class="project-images">
-                <img src="./images/per_project/project10/web_legacy/3.1.jpg" alt="">
-                <img src="./images/per_project/project10/web_legacy/2.1.jpg" alt="">
-                <img src="./images/per_project/project10/web_legacy/3.2.jpg" alt="">
-                <img src="./images/per_project/project10/web_legacy/cover.jpg" alt="">
-                <img src="./images/per_project/project10/web_legacy/intro.jpg" alt="">
-                <img src="./images/per_project/project10/web_legacy/outro.jpg" alt="">
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-info">
-                <h2>colour archive & publication | research project: patterns</h2>
-                <p>With guidance of Michel Hoogervorst, this colour archive resulted in a small-scale publication,
-                    which selected and organised textures, patterns and symbols from different cultures and
-                    ethnicities from several continents. cover: risograph and perfect bound (textile), cover:
-                    multicolor risograph. pages: Biotop 90gr, comcolor. <br>Guided by Michel Hoogervorst</p>
-            </div>
-            <div class="project-images">
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-info">
-                <h2>silkscreen tote bags | visual identity for NEX event</h2>
-                <p>Guided by Martin Lorenz</p>
-            </div>
-            <div class="project-images">
-                <img src="./images/per_project/project12/web_legacy/NEX_poster.jpg" alt="">
-                <img src="./images/per_project/project12/web_legacy/bag_1.jpg" alt="">
-                <img src="./images/per_project/project12/web_legacy/bag_2.jpg" alt="">
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-info">
-                <h2>autobahn workshop days X summer school graphic matters</h2>
-                <p>Autobahn scarcity type workshop that was held in and around the city of Breda during the Graphic
-                    Matters Summer School, 2021. Connecting concepts to the uses of material, fun experience in the
-                    city of Breda, and a playful process of working with type and their manifesto. Photography by
-                    Rosa Meininger Fotografie</p>
-            </div>
-            <div class="project-images">
-                <img src="./images/per_project/project13/web_legacyy/stuck_1.jpg" alt="">
-                <img src="./images/per_project/project13/web_legacyy/stuck_5.jpg" alt="">
-                <img src="./images/per_project/project13/web_legacyy/stuck_2.jpg" alt="">
-                <img src="./images/per_project/project13/web_legacyy/stuck_4.jpg" alt="">
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-info">
-                <h2>sketchbook | letterstudio 2021</h2>
-                <p></p>
-            </div>
-            <div class="project-images">
-                <img src="./images/per_project/project14/web_legacy/asin_4.jpg" alt="">
-                <img src="./images/per_project/project14/web_legacy/asin_3.jpg" alt="">
-                <img src="./images/per_project/project14/web_legacy/asin_2.jpg" alt="">
-                <img src="./images/per_project/project14/web_legacy/asin_1.jpg" alt="">
-                <img src="./images/per_project/project14/web_legacy/roam.jpg" alt="">
-                <img src="./images/per_project/project14/web_legacy/mycelia.jpg" alt="">
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-info">
-                <h2>dream project | poster series<br>EYE Buddhist Film Festival Europe</h2>
-                <p>Film poster redesigns for the BFFE of 2019. Rituals of Resistance (2018), Tenzin Phuntsog & Joy
-                    Dietrich | Darkhan (2019), Guka Omarova | The Red Phallus (2018), Tashi Gyeltshen. Screen
-                    prints, size: A1 - duo-colour blue, fluor orange, salmon and white. The circles in the poster
-                    design are a small reference to one of the Tibetan Buddhist traditions: the art of drawing sand
-                    mandalas. Guided by Susana Carvalho.
-                </p>
-            </div>
-            <div class="project-images">
-                <img src="./images/per_project/project15/1.jpg" alt="">
-                <img src="./images/per_project/project15/2.jpg" alt="">
-                <img src="./images/per_project/project15/3.jpg" alt="">
-                <img src="./images/per_project/project15/4.jpg" alt="">
-                <img src="./images/per_project/project15/5.jpg" alt="">
-                <img src="./images/per_project/project15/6.jpg" alt="">
-                <img src="./images/per_project/project15/7.jpg" alt="">
-                <img src="./images/per_project/project15/8.jpg" alt="">
-                <img src="./images/per_project/project15/9.jpg" alt="">
-            </div>
-        </div>
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
 
-        <div class="project">
-            <div class="project-info">
-                <h2></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repudiandae labore accusantium non
-                    quo ad quibusdam debitis, perspiciatis esse, reprehenderit accusamus, error assumenda. Quisquam
-                    beatae nisi dolorem! Amet, soluta harum.</p>
+                <div class="project-info">
+                    <h2>Log error Target</h2>
+                    <p>Log error target is a web browser game of which is based on the probabilities that are generated
+                        through the AI calculator from the Google Maps app. Through tracking and collecting our data
+                        from actual routes we take for navigation, even when these apps are not actively open and used,
+                        the AI simulator of the Semantic Location History of Google generates and makes calculations on
+                        all possible outcomes for each “device tag” (smartphone or other smart devices that have GPS
+                        tracking chips in their hardware). Focusing on these ‘probabilities’ and assumptions that are
+                        made for you (by these tracking apps,) Log error Target is a representation of this generated
+                        system where ‘us’ the users are (thinking) we’re in full control of our destinations, but whilst
+                        moving places with our smart devices in our pockets, decisions have been made for us by the use
+                        of percentages and variables.</p>
+                </div>
+                <div class="project-images">
+                    <img src="./images/per_project/project6/web_legacy/green_3.jpg" alt="">
+                    <img src="./images/per_project/project6/web_legacy/blue.jpg" alt="">
+                    <img src="./images/per_project/project6/web_legacy/cyan.jpg" alt="">
+                    <img src="./images/per_project/project6/web_legacy/orange.jpg" alt="">
+                    <img src="./images/per_project/project6/web_legacy/orange_2.jpg" alt="">
+                    <img src="./images/per_project/project6/web_legacy/yellow.jpg" alt="">
+                    <img src="./images/per_project/project6/web_legacy/green_3.jpg" alt="">
+                </div>
             </div>
-            <div class="project-images">
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="project-info">
+                    <h2>IBO</h2>
+                    <p>3 month internship at Irma Boom Office | 5 Sept. - 25th Nov. 2022</p>
+                </div>
+                <div class="project-images">
+                    <img src="./images/per_project/Internship_IBO/3months_IBO.gif" alt="">
+                </div>
             </div>
-        </div>
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="project-info">
+                    <h2>The Good of Doing Nothing | Documentation</h2>
+                    <p>During an exploration of the act of doing nothing - the collective 'Design Inquiry Group' gave
+                        the opportunity to question and understand what ‘doing nothing’ means in today’s society and how
+                        we all interpreted ‘doing nothing’ differently - also aside from our profession and our studies.
+                        Each week we would discuss subtopics around the act of ‘Doing Nothing’: ecology, breathing, the
+                        erotic, labour. With every topic and meetings every week, we would bring something to class and
+                        discuss this with tutors and peers - collaborate on small video projects and ensure to document
+                        the experiences translated into a publication and a short video: The Good of Doing Nothing.
+                        Cover: saddle stich bound, hand sown title. Pages: duo & multicolor risograph, laser printed A3
+                        Biotop 90-130gr, craft paper 80gr.</p>
+                </div>
+                <div class="project-images">
+                    <img src="./images/per_project/project9/web_legacy/cover.jpg" alt="">
+                    <img src="./images/per_project/project9/web_legacy/spread_2.jpg" alt="">
+                    <img src="./images/per_project/project9/web_legacy/spread_3.jpg" alt="">
+                    <img src="./images/per_project/project9/web_legacy/spread_4.jpg" alt="">
+                    <img src="./images/per_project/project9/web_legacy/spread_5.jpg" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="project-info">
+                    <h2>collective redesign | publication</h2>
+                    <p>Together with Alessandro Lucarini and Ronaldo Figueiredo, this redesign of the publication of
+                        Stuart Halls’ Representation was a short but interesting and sweet process. By trying first
+                        analysing the text ourselves, we tried to find a balance of clear communication of the text: we
+                        edited the use of images, defined more clearly the use of vocabulary, occasionally additional
+                        footnotes, and (re)structured the epistemology of the writer Stuart Hall to make this more
+                        accessible for a diverse public of readers. Guided by Els Kuijpers. cover: laserprinted,
+                        processing slicing tool. pages: biotop 90-120gr.</p>
+                </div>
+                <div class="project-images">
+                    <img src="./images/per_project/project10/web_legacy/3.1.jpg" alt="">
+                    <img src="./images/per_project/project10/web_legacy/2.1.jpg" alt="">
+                    <img src="./images/per_project/project10/web_legacy/3.2.jpg" alt="">
+                    <img src="./images/per_project/project10/web_legacy/cover.jpg" alt="">
+                    <img src="./images/per_project/project10/web_legacy/intro.jpg" alt="">
+                    <img src="./images/per_project/project10/web_legacy/outro.jpg" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="project-info">
+                    <h2>colour archive & publication | research project: patterns</h2>
+                    <p>With guidance of Michel Hoogervorst, this colour archive resulted in a small-scale publication,
+                        which selected and organised textures, patterns and symbols from different cultures and
+                        ethnicities from several continents. cover: risograph and perfect bound (textile), cover:
+                        multicolor risograph. pages: Biotop 90gr, comcolor. <br>Guided by Michel Hoogervorst</p>
+                </div>
+                <div class="project-images">
+                </div>
+            </div>
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="project-info">
+                    <h2>silkscreen tote bags | visual identity for NEX event</h2>
+                    <p>Guided by Martin Lorenz</p>
+                </div>
+                <div class="project-images">
+                    <img src="./images/per_project/project12/web_legacy/NEX_poster.jpg" alt="">
+                    <img src="./images/per_project/project12/web_legacy/bag_1.jpg" alt="">
+                    <img src="./images/per_project/project12/web_legacy/bag_2.jpg" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="project-info">
+                    <h2>autobahn workshop days X summer school graphic matters</h2>
+                    <p>Autobahn scarcity type workshop that was held in and around the city of Breda during the Graphic
+                        Matters Summer School, 2021. Connecting concepts to the uses of material, fun experience in the
+                        city of Breda, and a playful process of working with type and their manifesto. Photography by
+                        Rosa Meininger Fotografie</p>
+                </div>
+                <div class="project-images">
+                    <img src="./images/per_project/project13/web_legacyy/stuck_1.jpg" alt="">
+                    <img src="./images/per_project/project13/web_legacyy/stuck_5.jpg" alt="">
+                    <img src="./images/per_project/project13/web_legacyy/stuck_2.jpg" alt="">
+                    <img src="./images/per_project/project13/web_legacyy/stuck_4.jpg" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="project-info">
+                    <h2>sketchbook | letterstudio 2021</h2>
+                    <p></p>
+                </div>
+                <div class="project-images">
+                    <img src="./images/per_project/project14/web_legacy/asin_4.jpg" alt="">
+                    <img src="./images/per_project/project14/web_legacy/asin_3.jpg" alt="">
+                    <img src="./images/per_project/project14/web_legacy/asin_2.jpg" alt="">
+                    <img src="./images/per_project/project14/web_legacy/asin_1.jpg" alt="">
+                    <img src="./images/per_project/project14/web_legacy/roam.jpg" alt="">
+                    <img src="./images/per_project/project14/web_legacy/mycelia.jpg" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="project-info">
+                    <h2>dream project | poster series<br>EYE Buddhist Film Festival Europe</h2>
+                    <p>Film poster redesigns for the BFFE of 2019. Rituals of Resistance (2018), Tenzin Phuntsog & Joy
+                        Dietrich | Darkhan (2019), Guka Omarova | The Red Phallus (2018), Tashi Gyeltshen. Screen
+                        prints, size: A1 - duo-colour blue, fluor orange, salmon and white. The circles in the poster
+                        design are a small reference to one of the Tibetan Buddhist traditions: the art of drawing sand
+                        mandalas. Guided by Susana Carvalho.
+                    </p>
+                </div>
+                <div class="project-images">
+                    <img src="./images/per_project/project15/1.jpg" alt="">
+                    <img src="./images/per_project/project15/2.jpg" alt="">
+                    <img src="./images/per_project/project15/3.jpg" alt="">
+                    <img src="./images/per_project/project15/4.jpg" alt="">
+                    <img src="./images/per_project/project15/5.jpg" alt="">
+                    <img src="./images/per_project/project15/6.jpg" alt="">
+                    <img src="./images/per_project/project15/7.jpg" alt="">
+                    <img src="./images/per_project/project15/8.jpg" alt="">
+                    <img src="./images/per_project/project15/9.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="project">
+                <button class="proj-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="project-info">
+                    <h2></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repudiandae labore accusantium non
+                        quo ad quibusdam debitis, perspiciatis esse, reprehenderit accusamus, error assumenda. Quisquam
+                        beatae nisi dolorem! Amet, soluta harum.</p>
+                </div>
+                <div class="project-images">
+                </div>
+            </div>
         </div>
         </div>
 

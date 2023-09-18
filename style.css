@@ -55,7 +55,6 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   /* Firefox */
-  overflow-x: hidden;
 }
 
 h1,
@@ -87,15 +86,20 @@ body {
   display: none;
 }
 
-.content {
+#container {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
+
 .sidebar {
+  position: -webkit-sticky;
+  position: sticky;
   width: 360px;
   padding: 40px;
-
+  top: 0;
+  align-self: flex-start;
 }
 
 #video-container {
@@ -184,12 +188,11 @@ a:hover {
 }
 
 
-.grid {
+#grid {
   width: 100%;
   margin: 10px;
-  filter: blur(4px)
-    /* DELETE THIS WHEN DONE */
-    /* display: none; */
+  /* DELETE THIS WHEN DONE */
+  /* display: none; */
 }
 
 .grid:after {
@@ -221,13 +224,13 @@ a:hover {
 
 
 @media (hover: hover) {
-  /* .grid:hover .grid-item {
+  .grid:hover .grid-item {
+    filter: blur(4px);
+  }
+
+  #grid.grid-item:hover {
+
     filter: none;
-  } */
-
-  .grid .grid-item:hover {
-
-    filter: blur(0);
   }
 
 }
@@ -239,6 +242,23 @@ a:hover {
   /* display: flex; */
   flex-direction: row-reverse;
   max-width: 100%;
+}
+
+.proj-close {
+  position: absolute;
+  float: right;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  filter: invert(16%) sepia(77%) saturate(5423%) hue-rotate(306deg) brightness(115%) contrast(116%);
+}
+
+.proj-close svg {
+  width: 44px;
 }
 
 .project-info {
@@ -261,233 +281,38 @@ a:hover {
 }
 
 
-/* navigation */
-
-
-
-/* GENERAL USABILITY */
-
-/* hide desktop mobile etc */
-
-.desktop {
-  display: block;
-}
-
-.mobile {
-  display: none;
-}
-
-/* if you want to hide something visually but want to keep it readable / accessible for screen readers (sr) */
-
-/* .sr-only {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    -webkit-clip-path: inset(50%) !important;
-    clip-path: inset(50%) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-    white-space: nowrap !important;
-  } */
-
-
-/* MEDIA QUERIES */
-
-/* responsive typeface */
-
-@media (max-width: 298px) {
-  :root {
-    --font-size: 15px;
-  }
-
-  html,
-  body {}
-}
-
-@media (min-width: 299px) and (max-width: 339px) {
-  :root {
-    --font-size: 16px;
-  }
-
-  html,
-  body {}
-}
-
-@media (min-width: 340px) and (max-width: 439px) {
-  :root {
-    --font-size: 17px;
-  }
-
-  html,
-  body {
-    /* font: var(--font-size) var(--font-family); */
-  }
-}
-
-@media (min-width: 440px) and (max-width: 599px) {
-  :root {
-    --font-size: 18px;
-  }
-
-  html,
-  body {
-    /* font: var(--font-size) var(--font-family); */
-  }
-}
-
-@media (min-width: 600px) and (max-width: 779px) {
-  :root {
-    --font-size: 19px;
-  }
-
-  html,
-  body {
-    /* font: var(--font-size) var(--font-family); */
-  }
-}
-
-@media (min-width: 780px) and (max-width: 992px) {
-  :root {
-    --font-size: 20px;
-  }
-
-  html,
-  body {
-    /* font: var(--font-size) var(--font-family); */
-  }
-}
-
-@media (min-width: 993px) and (max-width: 1200px) {
-  :root {
-    --font-size: 22px;
-  }
-
-  html,
-  body {
-    /* font: var(--font-size) var(--font-family); */
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1319px) {
-  :root {
-    --font-size: 24px;
-  }
-
-  html,
-  body {
-    font: var(--font-size) var(--font-family);
-  }
-}
-
-@media (min-width: 1320px) and (max-width: 1619px) {
-  :root {
-    --font-size: 26px;
-  }
-
-  html,
-  body {
-    /* font: var(--font-size) var(--font-family); */
-  }
-}
-
-@media (min-width: 1620px) and (max-width: 1879px) {
-  :root {
-    --font-size: 28px;
-  }
-
-  html,
-  body {
-    /* font: var(--font-size) var(--font-family); */
-  }
-}
-
-@media (min-width: 1880px) {
-  :root {
-    --font-size: 30px;
-  }
-
-  html,
-  body {
-    /* font: var(--font-size) var(--font-family); */
-  }
-}
-
-
-
-
-
-/* website media queries */
-
-/* @media (max-width: 779px) { */
-
-/* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
-/* style this one first and then use the two others to 'override' some styles (exceptions/details) */
-
-
-
-
-
-
-/* utilities */
-
-.desktop {
-  display: none !important;
-}
-
-.mobile {
-  display: block;
-}
-
-
-/*   
-  @media (max-width: 339px) { */
-
-/* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
-
-/* } */
-
-
-
-/* @media (max-width: 779px) and (orientation: landscape) { */
-
-/* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
-
-/* } */
-
-
-
-
-/* use this query to apply style for 'small' desktop screens */
-
-/* } */
-
 
 /* Mode toggler stuff */
 .mode-button {
-  float: right;
-  box-shadow: 0 0 15px rgb(255, 0, 217);
+  position: absolute;
+  box-shadow: 0 0 15px #ff00d9;
+  top: 0;
+  right: 0;
   background-color: rgb(251, 251, 251);
   border-radius: 50%;
   z-index: 11;
   width: 30px;
   height: 30px;
+  z-index: 99;
 }
 
 @media (prefers-color-scheme: light) {
   body {
-
     background-color: rgb(245, 245, 245);
     color: rgb(106, 99, 97);
   }
 
-  #bio {
+  #sun {
+    display: none;
+  }
 
+  #bio {
     color: rgb(106, 99, 97);
   }
 
+  .mode-button svg {
+    fill: #000;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -496,9 +321,41 @@ a:hover {
     color: rgb(251, 251, 251);
   }
 
+  #moon {
+    display: none;
+  }
+
   #bio {
     color: rgb(251, 251, 251);
   }
 
+  .mode-button svg {
+    fill: #000;
+  }
+}
 
+
+@media screen and (max-width: 768px) {
+  .mode-button {
+    height: 44px;
+    width: 44px;
+  }
+
+  #container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  #grid {
+    margin: 0;
+  }
+
+  .grid-item,
+  .grid-sizer {
+    width: calc(100% - 20px);
+  }
 }
