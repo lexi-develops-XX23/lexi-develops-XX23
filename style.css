@@ -187,9 +187,9 @@ a:hover {
 .grid {
   width: 100%;
   margin: 10px;
-
-  /* DELETE THIS WHEN DONE */
-  /* display: none; */
+  filter: blur(4px)
+    /* DELETE THIS WHEN DONE */
+    /* display: none; */
 }
 
 .grid:after {
@@ -221,14 +221,13 @@ a:hover {
 
 
 @media (hover: hover) {
-  .grid:hover .grid-item {
-    filter: blur(4px);
-    transition: 500ms ease-in-out;
-  }
+  /* .grid:hover .grid-item {
+    filter: none;
+  } */
 
   .grid .grid-item:hover {
 
-    filter: none;
+    filter: blur(0);
   }
 
 }

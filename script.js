@@ -23,8 +23,6 @@ let toggleMode = () => {
 
 
 let imageBehavior = e => {
-    let projNumber = '#project' + e;
-    console.log(projNumber);
     document.querySelector(".grid").style.display = 'none'
     document.querySelectorAll(".project")[e].style.display = 'flex'
     console.log(e);
