@@ -139,7 +139,6 @@ body {
 }
 
 
-
 p {
   margin: 0;
 }
@@ -151,7 +150,7 @@ a:visited {
 }
 
 a:hover {
-  color: blue !important;
+  color: rgb(251, 251, 251) !important;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -191,6 +190,10 @@ a:hover {
 #grid {
   width: 100%;
   margin: 10px;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
   /* DELETE THIS WHEN DONE */
   /* display: none; */
 }
@@ -221,6 +224,7 @@ a:hover {
   max-width: 100%;
 }
 
+<<<<<<< Updated upstream
 
 
 @media (hover: hover) {
@@ -237,6 +241,8 @@ a:hover {
 
 
 
+=======
+>>>>>>> Stashed changes
 .project {
   display: none;
   /* display: flex; */
@@ -267,7 +273,7 @@ a:hover {
   padding-top: 10px;
   /* background-color: blue; */
 
-}
+}x  
 
 .project-images {
   flex: 0 0 60%;
@@ -283,11 +289,16 @@ a:hover {
 
 
 /* Mode toggler stuff */
+<<<<<<< Updated upstream
 .mode-button {
   position: absolute;
   box-shadow: 0 0 15px #ff00d9;
   top: 0;
   right: 0;
+=======
+.sidebar button {
+  box-shadow: 0 0 15px rgb(255, 0, 217);
+>>>>>>> Stashed changes
   background-color: rgb(251, 251, 251);
   border-radius: 50%;
   z-index: 11;
