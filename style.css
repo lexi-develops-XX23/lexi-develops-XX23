@@ -152,9 +152,15 @@ a:visited {
 }
 
 a:hover {
-  color: rgba(106, 99, 97, 0.315) !important;
+  color: rgb(255, 255, 255) !important;
   background-color: transparent;
   text-decoration: underline;
+  /* text-shadow: 0 0 10px rgb(255, 153, 240); */
+  text-shadow:
+    0 0 0.7em rgb(255, 153, 240);
+  /* color:rgba(106, 99, 97, 0.315); */
+  transition: shadow .3s;
+  object-fit: cover;
 }
 
 .btn {
