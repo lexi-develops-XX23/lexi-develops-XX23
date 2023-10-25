@@ -97,8 +97,10 @@ body {
   position: -webkit-sticky;
   position: sticky;
   width: 360px;
-  padding: 40px;
+  padding-right: 10px;
+  padding-left: 40px;
   top: 0;
+  padding-top: 0;
   align-self: flex-start;
 }
 
@@ -138,7 +140,6 @@ body {
   /* filter: grayscale(100%); */
   z-index: 1;
 }
-
 
 p {
   margin: 0;
@@ -183,14 +184,15 @@ a:hover {
 
   padding-top: 18px;
   font-family: 'Be Vietnam Pro';
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 0.7;
+  
 }
 
 .info {
   margin-top: 18px;
   font-family: 'Bagel Fat One';
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(106, 99, 97);
 }
 
@@ -229,6 +231,9 @@ a:hover {
 .grid-item:hover {
   box-shadow: 0 0 35px rgb(255, 153, 240);
   transition: box-shadow .4s;
+  border-style: solid;
+  border-color: rgb(255, 255, 255) !important;
+  border-width: 1.6px;
 }
 
 .grid-item img {
