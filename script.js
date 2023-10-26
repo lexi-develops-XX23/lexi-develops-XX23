@@ -10,7 +10,7 @@ let toggleMode = () => {
     console.log(theme)
     if (theme === 'light') {
         theme = 'dark'
-        document.body.style.backgroundColor = 'rgb(106, 99, 97)'
+        document.body.style.backgroundColor = 'rgb(48, 48, 48)'
         document.querySelectorAll("#bio")[0].style.color = 'rgb(245, 245, 245)'
         document.querySelectorAll("#moon")[0].style.display = 'none'
         document.querySelectorAll("#sun")[0].style.display = 'block'
@@ -18,7 +18,7 @@ let toggleMode = () => {
     } else {
         theme = 'light'
         document.body.style.backgroundColor = 'rgb(245, 245, 245)'
-        document.querySelectorAll("#bio")[0].style.color = 'rgb(106, 99, 97)'
+        document.querySelectorAll("#bio")[0].style.color = 'rgb(48, 48, 48)'
         document.querySelectorAll("#sun")[0].style.display = 'none'
         document.querySelectorAll("#moon")[0].style.display = 'block'
 

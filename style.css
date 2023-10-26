@@ -355,7 +355,7 @@ a:hover {
 @media (prefers-color-scheme: light) {
   body {
     background-color: rgb(245, 245, 245);
-    color: rgb(106, 99, 97);
+    color: rgb(48, 48, 48);
   }
 
   #sun {
@@ -373,7 +373,7 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: rgb(106, 99, 97);
+    background-color: rgb(48, 48, 48);
     color: rgb(251, 251, 251);
   }
 
