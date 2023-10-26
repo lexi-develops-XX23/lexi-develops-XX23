@@ -149,12 +149,21 @@ p {
 }
 
 a {
-  text-decoration: none!important;
+  position: relative;
+  text-decoration: none !important;
+}
+a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px dotted rgb(255, 0, 217); /* Adjust the thickness and color as needed */
 }
 
 a,
 a:visited {
-  color: rgb(255, 0, 217) !important;
+  color: rgb(106, 99, 97) !important;
   background-color: transparent;
   text-decoration: underline;
 }
