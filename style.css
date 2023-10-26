@@ -249,7 +249,7 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5); /* A semi-transparent background to indicate interaction */
+  background: rgb(255, 255, 255); /* A semi-transparent background to indicate interaction */
   display: none; /* Hide the overlay by default */
   justify-content: center;
   align-items: center;
