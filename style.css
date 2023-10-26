@@ -367,13 +367,13 @@ a:hover {
   }
 
   .mode-button svg {
-    fill: #000;
+    fill: rgb(106, 99, 97);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #000;
+    background-color: rgb(106, 99, 97);
     color: rgb(251, 251, 251);
   }
 
@@ -386,7 +386,7 @@ a:hover {
   }
 
   .mode-button svg {
-    fill: #000;
+    fill: rgb(106, 99, 97);
   }
 }
 
