@@ -12,6 +12,7 @@ let toggleMode = () => {
         theme = 'dark'
         document.body.style.backgroundColor = 'rgb(48, 48, 48)'
         document.querySelectorAll("#bio")[0].style.color = 'rgb(245, 245, 245)'
+        document.querySelectorAll("#info")[0].style.color = 'rgb(245, 245, 245)'
         document.querySelectorAll("#moon")[0].style.display = 'none'
         document.querySelectorAll("#sun")[0].style.display = 'block'
 
@@ -19,6 +20,7 @@ let toggleMode = () => {
         theme = 'light'
         document.body.style.backgroundColor = 'rgb(245, 245, 245)'
         document.querySelectorAll("#bio")[0].style.color = 'rgb(48, 48, 48)'
+        document.querySelectorAll("#info")[0].style.color = 'rgb(48, 48, 48)'
         document.querySelectorAll("#sun")[0].style.display = 'none'
         document.querySelectorAll("#moon")[0].style.display = 'block'
 
