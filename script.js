@@ -75,6 +75,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.querySelector("#special-grid-item").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent the default click behavior
+});
 // MediaSource.isTypeSupported()
 
 // if (MediaSource.isTypeSupported('video/mp4')) {
