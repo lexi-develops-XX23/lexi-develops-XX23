@@ -249,13 +249,13 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   background: rgba(0, 0, 0, 0.5); /* A semi-transparent background to indicate interaction */
   display: none; /* Hide the overlay by default */
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: calc(100% + 2px)!important; /* Increase by 2px */
+  max-height: calc(100% + 2px)!important; /* Increase by 2px */
 }
 
 .gif-overlay img {
