@@ -267,14 +267,6 @@ a:hover {
   display: flex; /* Show the overlay when hovering over the grid item */
 }
 
-#special-grid-item {
-  pointer-events: none; /* Disable click events for this specific grid item */
-}
-
-#special-grid-item:hover .gif-overlay {
-  display: flex; /* Enable the hover effect for the GIF */
-}
-
 @media (hover: hover) {
   .grid:hover .grid-item {
     filter: blur(4px);

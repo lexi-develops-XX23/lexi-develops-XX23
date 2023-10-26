@@ -27,18 +27,6 @@
         });
     </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const noClickItems = document.querySelectorAll('.no-click');
-    
-        noClickItems.forEach(function(item) {
-            item.addEventListener('click', function(event) {
-                event.preventDefault(); // Prevent the default click behavior
-                // You can add any additional logic or actions here if needed
-            });
-        });
-    });
-    </script>
 
     <script src="./script.js"></script>
 
@@ -139,14 +127,17 @@
                     <a href="#placeholder">
                         <img src="images/cover_images_grid_gallary/web_legacy_images_2/probabillaties_2022.jpg" /></a>
                 </div>
+
+
                 <div class="grid-item no-click">
                     <a href="#placeholder" disabled>
                         <img src="images/video_thumbnails/IBO.png" />
                             <div class="gif-overlay">
                                 <img src="images/gifs/IrmaBoom_5sept_25Nov_2022.gif" alt="Play GIF" />
                             </div>
+                        </a>
                 </div>
-            </a>
+            
 
                 <div class="grid-item">
                     <a href="#placeholder">
@@ -758,7 +749,16 @@
     </main>
 
 
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const noClickItem = document.querySelector('.no-click');
+        
+            noClickItem.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default click behavior
+                // You can add any additional logic or actions here if needed
+            });
+        });
+        </script>
 </body>
 
 </html>
