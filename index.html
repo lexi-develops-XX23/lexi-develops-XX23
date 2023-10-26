@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <!-- <script type="text/javascript" src="GitHub/simonida_savic/script.js?ver=1.0" defer></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <title>index.html</title>
     <link rel="stylesheet" href="./style.css">
@@ -34,9 +35,8 @@
 <body>
     <main>
 
-
-        <!-- <svg id="sun" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24">
+        <button class="mode-button" onclick="toggleMode()">
+            <svg id="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
                     d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z">
                 </path>
@@ -45,21 +45,15 @@
                 <path
                     d="M11.3807 2.01904C9.91573 3.38786 9 5.33708 9 7.50018C9 11.6423 12.3579 15.0002 16.5 15.0002C18.6631 15.0002 20.6123 14.0844 21.9811 12.6195C21.6613 17.8539 17.3149 22.0002 12 22.0002C6.47715 22.0002 2 17.523 2 12.0002C2 6.68532 6.14629 2.33888 11.3807 2.01904Z">
                 </path>
-            </svg>-->
+            </svg>
         </button>
-
-
-
-
-
+        <!-- <div class="switch" onclick="toggleMode()">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div> -->
         <div class="banner" style="background-image: url('images/mushies.png');">
-            <div class="switch">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-                </label>
-            </div>
-            <button class="mode-button" onclick="toggleMode()">
         </div>
 
         <div id="container">
@@ -74,14 +68,14 @@
                     <div class="content">
                         <div id="bio">
                             <p>
-                                Simonida Savić (NL) works<br>as a multidisciplinary graphic designer, where she
+                                Simonida Savić (NL) works as a multidisciplinary graphic designer, where she
                                 translates her research into visual storytelling.<br><br>By having a variety of
-                                interests, including the development of psychedelics and mushrooms,<br>as well as other
+                                interests, including the development of psychedelics and mushrooms, as well as other
                                 cultural curiosities, she uses her personal interest as an inspiration for her
-                                individual projects.<br><br>As she's located in The Hague -<br>during her studies at
+                                individual projects.<br><br>As she's located in The Hague - during her studies at
                                 KABK (2019-2023), she noticed that she finds great interest and curiosity by
-                                collaborating with peers and commissioners that <br>are not necessarily engaged
-                                in<br>the graphic design practice itself.</p>
+                                collaborating with peers and commissioners that are not necessarily engaged
+                                in the graphic design practice itself.</p>
 
                         </div>
                     </div>
@@ -220,11 +214,14 @@
                 <div class="project-info">
                     <h2>visual research project & printing methods</h2>
                     <p>A research project of which the interest/fascination for fungi,<br>mycelium and mushrooms
-                        manifested. By trying to find a balance<br>of theoretical research and visual translation - the
+                        manifested. By trying to find a balance<br>of theoretical research and visual translation -
+                        the
                         fungi project<br>ended up to be fun and exciting, which would allow for experiments without
                         hesitation. The photos are taken with a macro-lese in nearby forests of The Hague.
-                        Two photos have been selected to be printed<br>as cyanotypes, also multicolored risographs use
-                        the same imagery.<br><br>A3 cyanotypes, A3 risographs, Biotop paper 100-120gr,<br>full color and
+                        Two photos have been selected to be printed<br>as cyanotypes, also multicolored risographs
+                        use
+                        the same imagery.<br><br>A3 cyanotypes, A3 risographs, Biotop paper 100-120gr,<br>full color
+                        and
                         multi colored prints (sketches and collages)</p>
                 </div>
                 <div class="project-images">
@@ -254,20 +251,26 @@
                     <p>Final project and graduation work for the <a
                             href="https://www.instagram.com/kabkgdgraduation23/">“Good Soup”</a> graphic design
                         exhibition that was part of the <a
-                            href="https://graduation.kabk.nl/archive/year:2023">Graduation Show 2023</a> at the Royal
+                            href="https://graduation.kabk.nl/archive/year:2023">Graduation Show 2023</a> at the
+                        Royal
                         Academy of Art The Hague. Taking inspiration from the thesis,<br>by selecting a small
-                        sub-chapter, the curiosity would grow stronger and eventually it was used as the main theme for
-                        my graduation work. A few slides of the initial concept pitch show reasons of motivation<br> and
+                        sub-chapter, the curiosity would grow stronger and eventually it was used as the main theme
+                        for
+                        my graduation work. A few slides of the initial concept pitch show reasons of motivation<br>
+                        and
                         research questions. How could this project be relevant?
 
-                        <br><br>Guided & special thansk to: Ina Hollmann, Margarita Osipian, <br>Thomas Buxo, François
+                        <br><br>Guided & special thansk to: Ina Hollmann, Margarita Osipian, <br>Thomas Buxo,
+                        François
                         Girard-Meunier, Chantal Hendriksen, Lauren Alexander, Ruben Pater, Silvio Lorusso, Martijn
                         de Heer, Alexander Cromer, Iztok Klancar, Klasien vd Zandschulp, Louise Bezerra, Kenan de
                         Leeuw, Daan Keiman, Lila Watermann, Arantxa Polak, Jose Marie Imelda, Yeeun Kim, Alessandro
                         Lucarini, Ronaldo Figueirdo, Bella Inan-Carter & Ester Gasparova | <a
                             href="https://graduation.kabk.nl/2023/simonida-savic">KABK Graduation Festival
-                            2023</a><br><br>No online version available, find the trailer <a>here</a> (the short film
-                        has been submitted to various film festivals: selected for the <a>ROOTS film festival</a> in The
+                            2023</a><br><br>No online version available, find the trailer <a>here</a> (the short
+                        film
+                        has been submitted to various film festivals: selected for the <a>ROOTS film festival</a> in
+                        The
                         Hague, <a>Lulea Film Festival</a> in Sweden (semi-finals).
                     </p>
                 </div>
@@ -378,8 +381,10 @@
                     <h2>exhibition of mixed media 'fungi' </h2>
                     <p>By trying to find a balance of theoretical research and visual translation - the fungi
                         project ended up to be fun and exciting,<br>which would allow me to experiment without
-                        hesitation.<br>The final result became an installation of which different mediums came together
-                        in one space. Later on, she revisited this theme for her thesis and graduation proposal at the
+                        hesitation.<br>The final result became an installation of which different mediums came
+                        together
+                        in one space. Later on, she revisited this theme for her thesis and graduation proposal at
+                        the
                         <a href="https://graduation.kabk.nl/archive/year:2023">KABK Graduation Show (2023)</a>.
                     </p>
                 </div>
@@ -408,16 +413,23 @@
 
                 <div class="project-info">
                     <h2>Log error Target</h2>
-                    <p>Log error target is a web browser game of which is based on the probabilities that are generated
+                    <p>Log error target is a web browser game of which is based on the probabilities that are
+                        generated
                         through the AI calculator from the Google Maps app. Through tracking and collecting our data
-                        from actual routes we take for navigation, even when these apps are not actively open and used,
-                        the AI simulator of the Semantic Location History of Google generates and makes calculations on
+                        from actual routes we take for navigation, even when these apps are not actively open and
+                        used,
+                        the AI simulator of the Semantic Location History of Google generates and makes calculations
+                        on
                         all possible outcomes for each “device tag” (smartphone or other smart devices that have GPS
-                        tracking chips in their hardware).<br><br>Focusing on these ‘probabilities’ and assumptions that
+                        tracking chips in their hardware).<br><br>Focusing on these ‘probabilities’ and assumptions
+                        that
                         are
-                        made for you (by these tracking apps,) Log error Target is a representation of this generated
-                        system where ‘us’ the users are (thinking) we’re in full control of our destinations, but whilst
-                        moving places with our smart devices in our pockets, decisions have been made for us by the use
+                        made for you (by these tracking apps,) Log error Target is a representation of this
+                        generated
+                        system where ‘us’ the users are (thinking) we’re in full control of our destinations, but
+                        whilst
+                        moving places with our smart devices in our pockets, decisions have been made for us by the
+                        use
                         <br>of percentages and variables.
                     </p>
                 </div>
@@ -459,15 +471,22 @@
 
                 <div class="project-info">
                     <h2>The Good of Doing Nothing: documentation</h2>
-                    <p>During an exploration of the act of doing nothing - the collective 'Design Inquiry Group' gave
-                        the opportunity to question and understand what ‘doing nothing’ means in today’s society and how
-                        we all interpreted ‘doing nothing’ differently - also aside from our profession and our studies.
-                        <br>Each week we would discuss subtopics around the act of ‘Doing Nothing’: ecology, breathing,
+                    <p>During an exploration of the act of doing nothing - the collective 'Design Inquiry Group'
+                        gave
+                        the opportunity to question and understand what ‘doing nothing’ means in today’s society and
+                        how
+                        we all interpreted ‘doing nothing’ differently - also aside from our profession and our
+                        studies.
+                        <br>Each week we would discuss subtopics around the act of ‘Doing Nothing’: ecology,
+                        breathing,
                         the
-                        erotic, labour. With every topic and meetings every week, we would bring something to class and
-                        discuss this with tutors and peers - collaborate on small video projects and ensure to document
+                        erotic, labour. With every topic and meetings every week, we would bring something to class
+                        and
+                        discuss this with tutors and peers - collaborate on small video projects and ensure to
+                        document
                         the experiences translated into a publication and a short video: The Good of Doing Nothing.
-                        Cover: saddle stich bound, hand sown title. Pages: duo & multicolor risograph, laser printed A3
+                        Cover: saddle stich bound, hand sown title. Pages: duo & multicolor risograph, laser printed
+                        A3
                         Biotop 90-130gr, craft paper 80gr.
                     </p>
                 </div>
@@ -492,10 +511,13 @@
                     <h2>collective redesign | publication</h2>
                     <p>Together with Alessandro Lucarini and Ronaldo Figueiredo, this redesign of the publication of
                         Stuart Halls’ Representation was a short but interesting and sweet process. By trying first
-                        analysing the text ourselves, we tried to find a balance of clear communication of the text: we
-                        edited the use of images, defined more clearly the use of vocabulary, occasionally additional
+                        analysing the text ourselves, we tried to find a balance of clear communication of the text:
+                        we
+                        edited the use of images, defined more clearly the use of vocabulary, occasionally
+                        additional
                         footnotes, and (re)structured the epistemology of the writer Stuart Hall to make this more
-                        accessible for a diverse public of readers.<br><br>Guided by Els Kuijpers. cover: laserprinted,
+                        accessible for a diverse public of readers.<br><br>Guided by Els Kuijpers. cover:
+                        laserprinted,
                         <br>processing slicing tool. pages: biotop 90-120gr.
                     </p>
                 </div>
@@ -564,8 +586,10 @@
                     <h2>summer school graphic matters<br>X autobahn workshop days</h2>
                     <p>Autobahn scarcity type workshop that was held in and around <br>the city of Breda during the
                         Graphic
-                        Matters Summer School, 2021. Connecting concepts to the uses of material, fun experience in the
-                        city of Breda, and a playful process of working with type and their manifesto. Photography by
+                        Matters Summer School, 2021. Connecting concepts to the uses of material, fun experience in
+                        the
+                        city of Breda, and a playful process of working with type and their manifesto. Photography
+                        by
                         Rosa Meininger Fotografie</p>
                 </div>
                 <div class="project-images">
@@ -608,10 +632,13 @@
 
                 <div class="project-info">
                     <h2>dream project poster series:<br>EYE Buddhist Film Festival Europe</h2>
-                    <p>Film poster redesigns for the BFFE of 2019. Rituals of Resistance (2018), Tenzin Phuntsog & Joy
+                    <p>Film poster redesigns for the BFFE of 2019. Rituals of Resistance (2018), Tenzin Phuntsog &
+                        Joy
                         Dietrich | Darkhan (2019), Guka Omarova | The Red Phallus (2018), Tashi Gyeltshen. Screen
-                        prints, size: A1 - duo-colour blue, fluor orange, salmon and white.<br>The circles in the poster
-                        design are a small reference to one of<br>the Tibetan Buddhist traditions: the art of drawing
+                        prints, size: A1 - duo-colour blue, fluor orange, salmon and white.<br>The circles in the
+                        poster
+                        design are a small reference to one of<br>the Tibetan Buddhist traditions: the art of
+                        drawing
                         sand mandalas.<br><br>Guided by Susana Carvalho.
                     </p>
                 </div>
@@ -639,8 +666,10 @@
 
                 <div class="project-info">
                     <h2></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repudiandae labore accusantium non
-                        quo ad quibusdam debitis, perspiciatis esse, reprehenderit accusamus, error assumenda. Quisquam
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repudiandae labore accusantium
+                        non
+                        quo ad quibusdam debitis, perspiciatis esse, reprehenderit accusamus, error assumenda.
+                        Quisquam
                         beatae nisi dolorem! Amet, soluta harum.</p>
                 </div>
                 <div class="project-images">

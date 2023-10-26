@@ -5,7 +5,9 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 } else {
     theme = 'light'
 }
+
 let toggleMode = () => {
+    console.log(theme)
     if (theme === 'light') {
         theme = 'dark'
         document.body.style.backgroundColor = '#000'
@@ -17,11 +19,8 @@ let toggleMode = () => {
         theme = 'light'
         document.body.style.backgroundColor = '#fff'
         document.querySelectorAll("#bio")[0].style.color = 'rgb(106, 99, 97)'
-        console.log(document.querySelectorAll(".bio"));
         document.querySelectorAll("#sun")[0].style.display = 'none'
         document.querySelectorAll("#moon")[0].style.display = 'block'
-
-
 
     }
 }
@@ -65,38 +64,39 @@ window.onload = () => {
     });
 }
 
-MediaSource.isTypeSupported()
+// MediaSource.isTypeSupported()
 
-if (MediaSource.isTypeSupported('video/mp4')) {
-    // Your code to work with video/mp4
-} else {
-    console.log('Video format is not supported.');
-}
+// if (MediaSource.isTypeSupported('video/mp4')) {
+//     // Your code to work with video/mp4
+// } else {
+//     console.log('Video format is not supported.');
+// }
 
-function canPlayH264 () {
-    var v = document.createElement('video');
-    return !!(v.canPlayType && v.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"').replace(/no/, ''));
-};
+// function canPlayH264() {
+//     var v = document.createElement('video');
+//     return !!(v.canPlayType && v.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"').replace(/no/, ''));
+// };
 
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
+// const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+// const currentTheme = localStorage.getItem('theme');
 
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-  
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-    }
-}
+// if (currentTheme) {
+//     document.documentElement.setAttribute('data-theme', currentTheme);
 
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-    }
-    else {        document.documentElement.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
-    }    
-}
+//     if (currentTheme === 'dark') {
+//         toggleSwitch.checked = true;
+//     }
+// }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+// function switchTheme(e) {
+//     if (e.target.checked) {
+//         document.documentElement.setAttribute('data-theme', 'dark');
+//         localStorage.setItem('theme', 'dark');
+//     }
+//     else {
+//         document.documentElement.setAttribute('data-theme', 'light');
+//         localStorage.setItem('theme', 'light');
+//     }
+// }
+
+// toggleSwitch.addEventListener('change', switchTheme, false);
