@@ -64,6 +64,17 @@ window.onload = () => {
     });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const noClickItems = document.querySelectorAll('.no-click');
+
+    noClickItems.forEach(function(item) {
+        item.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default click behavior
+            // You can add any additional logic or actions here if needed
+        });
+    });
+});
+
 // MediaSource.isTypeSupported()
 
 // if (MediaSource.isTypeSupported('video/mp4')) {
