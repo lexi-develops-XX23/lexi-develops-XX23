@@ -366,6 +366,10 @@ a:hover {
     color: rgb(106, 99, 97);
   }
 
+  #info{
+    color: rgb(106, 99, 97);
+  }
+
   .mode-button svg {
     fill: rgb(106, 99, 97);
   }
@@ -382,6 +386,10 @@ a:hover {
   }
 
   #bio {
+    color: rgb(251, 251, 251);
+  }
+
+  #info{
     color: rgb(251, 251, 251);
   }
 
