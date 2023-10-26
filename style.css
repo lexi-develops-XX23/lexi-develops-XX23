@@ -258,6 +258,10 @@ a:hover {
   max-height: calc(100% + 2px)!important; /* Increase by 2px */
 }
 
+#special-grid-item {
+  pointer-events: none; /* Disable click events for this specific grid item */
+}
+
 .gif-overlay img {
   max-width: 100%;
   max-height: 100%;
