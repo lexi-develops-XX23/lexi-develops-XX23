@@ -258,6 +258,19 @@ a:hover {
   max-height: calc(100% + 2px)!important; /* Increase by 2px */
 }
 
+.grid-item.no-click {
+  pointer-events: none;
+}
+
+/* For the gif-overlay, use pointer-events: auto; to re-enable pointer events within this element */
+.grid-item.no-click .gif-overlay {
+  pointer-events: auto;
+}
+
+.grid-item.no-click:hover .gif-overlay {
+  display: flex; /* Show the overlay when hovering over the grid item */
+}
+
 #special-grid-item {
   pointer-events: none; /* Disable click events for this specific grid item */
 }
