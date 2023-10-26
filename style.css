@@ -61,10 +61,12 @@ h1,
 h2,
 h3 {
   font-family: var(--font-headings);
+  color:rgb(106, 99, 97) !important;
 }
 
 p {
   font-family: var(--font-paragraph);
+  color:rgb(106, 99, 97) !important;
 }
 
 html {
@@ -147,14 +149,14 @@ p {
 }
 
 a {
-  text-decoration: underline !important;
+  text-decoration: none!important;
 }
 
 a,
 a:visited {
   color: rgb(255, 0, 217) !important;
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -198,7 +200,6 @@ a:hover {
   font-family: 'Bagel Fat One';
   font-size: 14px;
   color: rgb(255, 0, 217);
-  text-decoration: none;
 }
 
 
