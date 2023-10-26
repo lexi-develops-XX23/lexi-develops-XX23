@@ -64,20 +64,21 @@ window.onload = () => {
     });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const noClickItems = document.querySelectorAll('.no-click');
+window.onload = () => {
+    var gridCollection = document.getElementsByClassName("grid-item");
+    var gridItems = [...gridCollection];
 
-    noClickItems.forEach(function(item) {
-        item.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default click behavior
-            // You can add any additional logic or actions here if needed
+    gridItems.forEach(function (element, i) {
+        element.addEventListener("click", function (event) {
+            if (element.dataset.clickDisabled === "true") {
+                event.preventDefault(); // Prevent the default click behavior
+                imageBehavior(i); // Handle the hover effect or any other actions you want
+            } else {
+                imageBehavior(i);
+            }
         });
     });
-});
-
-document.querySelector("#special-grid-item").addEventListener("click", function (e) {
-    e.preventDefault(); // Prevent the default click behavior
-});
+};
 // MediaSource.isTypeSupported()
 
 // if (MediaSource.isTypeSupported('video/mp4')) {
