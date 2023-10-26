@@ -64,21 +64,6 @@ window.onload = () => {
     });
 }
 
-window.onload = () => {
-    var gridCollection = document.getElementsByClassName("grid-item");
-    var gridItems = [...gridCollection];
-
-    gridItems.forEach(function (element, i) {
-        element.addEventListener("click", function (event) {
-            if (element.dataset.clickDisabled === "true") {
-                event.preventDefault(); // Prevent the default click behavior
-                imageBehavior(i); // Handle the hover effect or any other actions you want
-            } else {
-                imageBehavior(i);
-            }
-        });
-    });
-};
 // MediaSource.isTypeSupported()
 
 // if (MediaSource.isTypeSupported('video/mp4')) {
