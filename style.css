@@ -152,7 +152,7 @@ a {
 
 a,
 a:visited {
-  color: rgb(106, 99, 97) !important;
+  color: rgb(255, 0, 217) !important;
   background-color: transparent;
   text-decoration: none;
 }
@@ -160,7 +160,7 @@ a:visited {
 a:hover {
   color: rgb(255, 255, 255) !important;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
   /* text-shadow: 0 0 10px rgb(255, 153, 240); */
   text-shadow:
     0 0 0.7em rgb(255, 153, 240);
@@ -197,7 +197,8 @@ a:hover {
   margin-top: 18px;
   font-family: 'Bagel Fat One';
   font-size: 14px;
-  color: rgb(106, 99, 97);
+  color: rgb(255, 0, 217);
+  text-decoration: none;
 }
 
 
