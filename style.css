@@ -367,7 +367,7 @@ a:hover {
   }
 
   #info{
-    color: rgb(106, 99, 97);
+    color: rgb(106, 99, 97) !important;
   }
 
   .mode-button svg {
@@ -390,7 +390,7 @@ a:hover {
   }
 
   #info{
-    color: rgb(251, 251, 251);
+    color: rgb(251, 251, 251) !important;
   }
 
   .mode-button svg {
