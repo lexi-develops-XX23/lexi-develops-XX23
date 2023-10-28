@@ -270,6 +270,9 @@ a:hover {
   max-height: calc(100% + 2px)!important; /* Increase by 2px */
 }
 
+.gif-overlay a {
+  text-decoration: none !important;
+}
 
 .gif-overlay img {
   max-width: 100%;
@@ -282,6 +285,7 @@ a:hover {
 
 .grid-item:hover .gif-overlay {
   display: flex; /* Show the overlay when hovering over the grid item */
+   text-decoration: none !important;
 }
 
 @media (hover: hover) {
@@ -289,7 +293,7 @@ a:hover {
     filter: blur(4px);
   }
 
-  #grid.grid-item:hover {
+  grid-item:hover {
     filter: none;
   }
 
