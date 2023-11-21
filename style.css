@@ -284,7 +284,7 @@ a:hover {
 }
 
 .grid-item:hover .gif-overlay {
-  display: flex; /* Show the overlay when hovering over the grid item */
+  display: flex !important; /* Show the overlay when hovering over the grid item */
    text-decoration: none !important;
 }
 

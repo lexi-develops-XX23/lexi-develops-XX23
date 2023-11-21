@@ -1,3 +1,7 @@
+function preventClick(event) {
+    event.preventDefault();
+}
+
 var theme = ''
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -28,18 +32,41 @@ let toggleMode = () => {
 }
 
 
+// let imageBehavior = e => {
+//     document.querySelector("#grid").style.display = 'none'
+//     document.querySelectorAll(".project")[e].style.display = 'flex'
+//     console.log(e);
+// }
+
 let imageBehavior = e => {
-    document.querySelector("#grid").style.display = 'none'
-    document.querySelectorAll(".project")[e].style.display = 'flex'
-    console.log(e);
+    var projects = document.querySelectorAll(".project");
+
+    if (e >= 0 && e < projects.length) {
+        document.querySelector("#grid").style.display = 'none';
+        projects[e].style.display = 'flex';
+        console.log("Project displayed:", e);
+    } else {
+        console.error("Invalid index or project not found:", e);
+    }
 }
 
 let closeBehavior = e => {
-    document.querySelector("#grid").style.display = 'block'
-    document.querySelectorAll(".project")[e].style.display = 'none'
-    console.log(e);
+    var projects = document.querySelectorAll(".project");
 
+    if (e >= 0 && e < projects.length) {
+        document.querySelector("#grid").style.display = 'block';
+        projects[e].style.display = 'none';
+        console.log("Project closed:", e);
+    } else {
+        console.error("Invalid index or project not found:", e);
+    }
 }
+// let closeBehavior = e => {
+//     document.querySelector("#grid").style.display = 'block'
+//     document.querySelectorAll(".project")[e].style.display = 'none'
+//     console.log(e);
+
+// }
 
 
 
@@ -65,6 +92,7 @@ window.onload = () => {
         );
     });
 }
+
 
 // MediaSource.isTypeSupported()
 
