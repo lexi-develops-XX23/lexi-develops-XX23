@@ -10,6 +10,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matc
 } else {
     theme = 'light';
 }
+const modeButton = document.getElementById('toggleButton');
 
 let toggleMode = () => {
     console.log(theme);
@@ -20,8 +21,7 @@ let toggleMode = () => {
     document.documentElement.setAttribute('data-theme', theme);
 
     // Update the color of the mode toggle button
-    const modeButton = document.getElementById('toggleButton');
-    
+
     if (theme === 'light') {
         modeButton.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
         modeButton.style.color = 'rgb(31, 31, 31)';
