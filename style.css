@@ -61,12 +61,10 @@ h1,
 h2,
 h3 {
   font-family: var(--font-headings);
-  color:rgb(106, 99, 97) !important;
 }
 
 p {
   font-family: var(--font-paragraph);
-  color:rgb(106, 99, 97) !important;
 }
 
 html {
@@ -163,7 +161,7 @@ a::before {
 
 a,
 a:visited {
-  color: rgb(106, 99, 97) !important;
+  color:  rgb(255, 135, 237) !important;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -366,7 +364,7 @@ a:hover {
   height: 30px;
   z-index: 99;
 }
-
+/* 
 @media (prefers-color-scheme: light) {
   body {
     background-color: rgb(245, 245, 245);
@@ -382,7 +380,7 @@ a:hover {
   }
 
   #info{
-    color: rgb(106, 99, 97) !important;
+    color: rgb(106, 99, 97);
   }
 
   .mode-button svg {
@@ -401,15 +399,76 @@ a:hover {
   }
 
   #bio {
-    color: rgb(251, 251, 251);
+    color: rgb(177, 165, 162);
   }
 
   #info{
-    color: rgb(251, 251, 251) !important;
+    color: rgb(177, 165, 162);
   }
 
   .mode-button svg {
     fill: rgb(106, 99, 97);
+  }
+} */
+
+:root {
+  --color-text-light: rgb(106, 99, 97);
+  --color-text-dark: rgb(255, 246, 245);
+  --background-light: rgb(255, 246, 245);
+  --background-dark: rgb(31, 28, 28);
+  /* Define more variables as needed */
+}
+
+/* Default styles for light theme */
+[data-theme='light'] {
+  --color-text: var(--color-text-light);
+  --background: var(--background-light);
+  --button-background: rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for dark theme */
+[data-theme='dark'] {
+  --color-text: var(--color-text-dark);
+  --background: var(--background-dark);
+  --button-background: rgba(255, 255, 255, 0.5)
+}
+
+body {
+  background-color: var(--background);
+  color: var(--color-text);
+}
+
+#bio,
+#info {
+  color: var(--color-text);
+}
+
+#sun,
+#moon {
+  display: none;
+}
+
+[data-theme='dark'] #moon,
+[data-theme='light'] #sun {
+  display: block;
+}
+
+#toggleButton {
+  background-color: var(--button-background);
+  color: var(--color-text);
+  /* Add more styles as needed */
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    /* Adjust styles for smaller screens if needed */
+  }
+
+  #bio,
+  #info {
+    /* Adjust styles for smaller screens if needed */
   }
 }
 

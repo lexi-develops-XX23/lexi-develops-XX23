@@ -1,35 +1,73 @@
-function preventClick(event) {
-    event.preventDefault();
-}
+// function preventClick(event) {
+//     event.preventDefault();
+// }
 
-var theme = ''
+var theme = '';
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    theme = 'dark'
+// Check the user's preferred color scheme
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    theme = 'dark';
 } else {
-    theme = 'light'
+    theme = 'light';
 }
 
 let toggleMode = () => {
-    console.log(theme)
+    console.log(theme);
+    // Toggle theme
+    theme = theme === 'light' ? 'dark' : 'light';
+
+    // Update CSS variables based on the theme
+    document.documentElement.setAttribute('data-theme', theme);
+
+    // Update the color of the mode toggle button
+    const modeButton = document.getElementById('toggleButton');
+    
     if (theme === 'light') {
-        theme = 'dark'
-        document.body.style.backgroundColor = 'rgb(31, 31, 31)'
-        document.querySelectorAll("#bio")[0].style.color = 'rgb(245, 245, 245)'
-        document.querySelectorAll("#info")[0].style.color = 'rgb(245, 245, 245)'
-        document.querySelectorAll("#moon")[0].style.display = 'none'
-        document.querySelectorAll("#sun")[0].style.display = 'block'
-
+        modeButton.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        modeButton.style.color = 'rgb(31, 31, 31)';
     } else {
-        theme = 'light'
-        document.body.style.backgroundColor = 'rgb(245, 245, 245)'
-        document.querySelectorAll("#bio")[0].style.color = 'rgb(31, 31, 31)'
-        document.querySelectorAll("#info")[0].style.color = 'rgb(31, 31, 31)'
-        document.querySelectorAll("#sun")[0].style.display = 'none'
-        document.querySelectorAll("#moon")[0].style.display = 'block'
-
+        modeButton.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+        modeButton.style.color = 'rgb(177, 165, 162)';
     }
-}
+};
+
+// Initial call to set the theme based on the user's preference
+toggleMode();
+
+
+
+
+
+
+
+// var theme = ''
+
+// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//     theme = 'dark'
+// } else {
+//     theme = 'light'
+// }
+
+// let toggleMode = () => {
+//     console.log(theme)
+//     if (theme === 'light') {
+//         theme = 'dark'
+//         document.body.style.backgroundColor = 'rgb(31, 31, 31)'
+//         document.querySelectorAll("#bio")[0].style.color = 'rgb(177, 165, 162)'
+//         document.querySelectorAll("#info")[0].style.color = 'rgb(177, 165, 162)'
+//         document.querySelectorAll("#moon")[0].style.display = 'none'
+//         document.querySelectorAll("#sun")[0].style.display = 'block'
+
+//     } else {
+//         theme = 'light'
+//         document.body.style.backgroundColor = 'rgb(245, 245, 245)'
+//         document.querySelectorAll("#bio")[0].style.color = 'rgb(31, 31, 31)'
+//         document.querySelectorAll("#info")[0].style.color = 'rgb(31, 31, 31)'
+//         document.querySelectorAll("#sun")[0].style.display = 'none'
+//         document.querySelectorAll("#moon")[0].style.display = 'block'
+
+//     }
+// }
 
 
 // let imageBehavior = e => {
